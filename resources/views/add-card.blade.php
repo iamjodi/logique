@@ -20,7 +20,7 @@
 
                         <div class="mt-4">
                             <x-jet-label for="address" value="{{ __('Address') }}" />
-                            <x-jet-input id="address" class="block mt-1 w-full" type="text" name="address" :value="old('address')" autofocus autocomplete="address" />
+                            <x-jet-input id="address" class="block mt-1 w-full" type="text" name="address" :value="old('address')" required autofocus autocomplete="address" />
                         </div>
 
                         <div class="mt-4">
@@ -30,7 +30,7 @@
 
                         <div class="mt-4">
                             <x-jet-label for="memberType" value="{{ __('Membership Type') }}" />
-                            <select name="memberType" id="memberType">
+                            <select name="member_type" id="member_type">
                               <option value="silver">Silver</option>
                               <option value="gold">Gold</option>
                               <option value="platinum">Platinum</option>
@@ -43,7 +43,7 @@
                         <div class="mt-4">
                             <div class="mt-4">
                                 <x-jet-label for="number" value="{{ __('Number') }}" />
-                                <x-jet-input id="number" class="block mt-1" type="number" name="number" required autocomplete="number" />
+                                <x-jet-input id="number" class="block mt-1" type="number" min=0 name="number" required autocomplete="number" />
                             </div>
                             
                             <div class="mt-4">
@@ -52,8 +52,8 @@
                             </div>
 
                             <div class="mt-4">
-                                <x-jet-label for="expdate" value="{{ __('Expired Date') }}" />
-                                <x-jet-input id="expdate" class="block mt-1" type="date" name="expdate" required autocomplete="expdate" />
+                                <x-jet-label for="expired_date" value="{{ __('Expired Date') }}" />
+                                <x-jet-input id="expired_date" class="block mt-1" type="date" name="expired_date" required autocomplete="expired_date" />
                             </div>
                         </div>
 
