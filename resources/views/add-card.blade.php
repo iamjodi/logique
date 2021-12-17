@@ -43,7 +43,7 @@
                         <div class="mt-4">
                             <div class="mt-4">
                                 <x-jet-label for="number" value="{{ __('Number') }}" />
-                                <x-jet-input id="number" class="block mt-1" type="number" min=0 name="number" required autocomplete="number" />
+                                <x-jet-input id="number" class="block mt-1" type="text" min=0 name="number" required autocomplete="number" />
                             </div>
                             
                             <div class="mt-4">
